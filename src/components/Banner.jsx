@@ -1,7 +1,7 @@
 
 const Banner = () => {
     return (
-        <div className="relative pb-[500px]">
+        <div className="relative pb-[500px] ">
             <div className="bg-[#9538E2] pt-5 min-h-[calc(100vh-250px)] rounded-b-2xl">
                 <div className="max-w-7xl mx-auto  lg:px-10 text-center space-y-5">
                     <h2 className="text-2xl lg:text-5xl font-semibold text-white">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h2>

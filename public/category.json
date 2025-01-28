@@ -1,16 +1,17 @@
 [
   {
     "category_id": 1,
-    "category": "Laptops"
+    "category": "Accessories"
   },
   {
     "category_id": 2,
-    "category": "Phones"
+    "category": "Laptops"
   },
   {
     "category_id": 3,
-    "category": "Accessories"
+    "category": "Phones"
   },
+
   {
     "category_id": 4,
     "category": "Smart Watches"

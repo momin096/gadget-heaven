@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className="container mx-auto">
             <Banner />
-            <div className="flex">
+            <div className="flex gap-5 flex-col md:flex-row">
            <div>
            <Categories categories={categories} />
            </div>

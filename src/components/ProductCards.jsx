@@ -13,14 +13,13 @@ const ProductCards = () => {
             setProducts(categoryProducts);
         }
         else{
-            setProducts(allProducts)
+            setProducts(allProducts.slice(0,9))
         }
     }, [allProducts, category]);
-    console.log(products);
     
 
     return (
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5  ">
 
             {
                 products.map(product => <ProductCard product={product} key={product.product_id}></ProductCard>)

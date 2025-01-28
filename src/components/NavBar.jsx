@@ -1,17 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 
 
 const NavBar = () => {
+    const location = useLocation();
+
     const links = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/statistics'>Statistics</NavLink></li>
-        <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
+        <li><NavLink className='text-black md:text-white' to='/'>Home</NavLink></li>
+        <li><NavLink className='text-black md:text-white' to='/statistics'>Statistics</NavLink></li>
+        <li><NavLink className='text-black md:text-white' to='/dashboard'>Dashboard</NavLink></li>
     </>
     return (
         <div className='container mx-auto mt-1'>
-            <div className="navbar bg-[#9538E2] rounded-t-2xl text-white lg:px-20">
+            <div className={`navbar ${location.pathname === `${'/:name/:productId'}` ? 'bg-white' : 'bg-[#9538E2]' }  rounded-t-2xl text-white lg:px-20`}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,7 +38,7 @@ const NavBar = () => {
                             }
                         </ul>
                     </div>
-                    <NavLink to='/'><span className="btn btn-soft text-2xl bg-[#9538E2] border-none text-white">Gadget Heaven</span></NavLink>
+                    <NavLink to='/'><span className="btn btn-soft text-xl lg:text-2xl bg-[#9538E2] border-none text-white">Gadget Heaven</span></NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 space-x-5">
