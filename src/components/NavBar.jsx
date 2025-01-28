@@ -2,15 +2,13 @@ import { NavLink } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 
+
 const NavBar = () => {
     const links = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/statistics'>Statistics</NavLink></li>
         <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
-
     </>
-
-
     return (
         <div className='container mx-auto mt-1'>
             <div className="navbar bg-[#9538E2] rounded-t-2xl text-white lg:px-20">
@@ -38,7 +36,7 @@ const NavBar = () => {
                             }
                         </ul>
                     </div>
-                    <NavLink to='/'><a className="btn btn-soft text-2xl bg-[#9538E2] border-none text-white">Gadget Heaven</a></NavLink>
+                    <NavLink to='/'><span className="btn btn-soft text-2xl bg-[#9538E2] border-none text-white">Gadget Heaven</span></NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 space-x-5">
@@ -48,6 +46,12 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end space-x-4">
+
+                    {/* <button className="btn">
+                       
+                    </button> */}
+                    
+                    
                     <IoCartOutline className="text-4xl bg-white text-black p-1 rounded-full" />
                     <IoMdHeartEmpty className="text-4xl bg-white text-black p-1 rounded-full" />
                 </div>

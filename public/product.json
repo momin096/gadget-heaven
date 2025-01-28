@@ -1,0 +1,503 @@
+[
+    {
+        "product_id": 1,
+        "product_title": "Dell Inspiron 15",
+        "product_image": "https://ibb.co.com/BgQ0BDB",
+        "category": "Laptops",
+        "price": 699.99,
+        "description": "15.6-inch laptop with Intel Core i5 processor, 8GB RAM, and 512GB SSD.",
+        "Specification": [
+            "Intel Core i5",
+            "15.6-inch FHD display",
+            "8GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.3,
+        "extra_section": "1-year warranty included"
+    },
+    {
+        "product_id": 2,
+        "product_title": "HP Pavilion x360",
+        "product_image": "https://ibb.co.com/t208kB7",
+        "category": "Laptops",
+        "price": 849.99,
+        "description": "2-in-1 convertible laptop with a touch screen and Intel Core i7 processor.",
+        "Specification": [
+            "Intel Core i7",
+            "14-inch touch display",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.6,
+        "extra_section": "Includes stylus pen"
+    },
+    {
+        "product_id": 3,
+        "product_title": "Apple MacBook Pro 14",
+        "product_image": "https://ibb.co.com/0hdRDSV",
+        "category": "MacBook",
+        "price": 1999.99,
+        "description": "14-inch MacBook Pro with M1 Pro chip, 16GB RAM, and 1TB SSD.",
+        "Specification": [
+            "Apple M1 Pro chip",
+            "14-inch Liquid Retina XDR display",
+            "16GB RAM",
+            "1TB SSD"
+        ],
+        "availability": true,
+        "rating": 4.9,
+        "extra_section": "Comes with macOS Monterey"
+    },
+    {
+        "product_id": 4,
+        "product_title": "Apple MacBook Air M2",
+        "product_image": "https://ibb.co.com/0hdRDSV",
+        "category": "MacBook",
+        "price": 1299.99,
+        "description": "13.6-inch MacBook Air with M2 chip, 8GB RAM, and 512GB SSD.",
+        "Specification": [
+            "Apple M2 chip",
+            "13.6-inch Liquid Retina display",
+            "8GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.7,
+        "extra_section": "Lightweight and fanless design"
+    },
+    {
+        "product_id": 5,
+        "product_title": "Iphone 14 Pro Max",
+        "product_image": "https://ibb.co.com/KFVjJyt",
+        "category": "Iphone",
+        "price": 1199.99,
+        "description": "6.7-inch Iphone 14 Pro Max with A16 Bionic chip and triple-camera system.",
+        "Specification": [
+            "A16 Bionic chip",
+            "6.7-inch Super Retina XDR display",
+            "ProMotion technology",
+            "48MP main camera"
+        ],
+        "availability": true,
+        "rating": 4.8,
+        "extra_section": "Dynamic Island feature included"
+    },
+    {
+        "product_id": 6,
+        "product_title": "Iphone 13 Mini",
+        "product_image": "https://ibb.co.com/KFVjJyt",
+        "category": "Iphone",
+        "price": 699.99,
+        "description": "5.4-inch Iphone 13 Mini with A15 Bionic chip and dual-camera system.",
+        "Specification": [
+            "A15 Bionic chip",
+            "5.4-inch Super Retina XDR display",
+            "Dual-camera system",
+            "Up to 17 hours video playback"
+        ],
+        "availability": false,
+        "rating": 4.5,
+        "extra_section": "Compact and lightweight design"
+    },
+    {
+        "product_id": 7,
+        "product_title": "Samsung Galaxy S23 Ultra",
+        "product_image": "https://ibb.co.com/JjGc7XH",
+        "category": "Phones",
+        "price": 1199.99,
+        "description": "6.8-inch smartphone with Snapdragon 8 Gen 2 and 200MP camera.",
+        "Specification": [
+            "Snapdragon 8 Gen 2",
+            "6.8-inch Dynamic AMOLED display",
+            "12GB RAM",
+            "200MP main camera"
+        ],
+        "availability": true,
+        "rating": 4.7,
+        "extra_section": "S Pen included"
+    },
+    {
+        "product_id": 8,
+        "product_title": "Google Pixel 7 Pro",
+        "product_image": "https://ibb.co.com/ygz0BVV",
+        "category": "Phones",
+        "price": 899.99,
+        "description": "6.7-inch smartphone with Google Tensor G2 chip and triple-camera system.",
+        "Specification": [
+            "Google Tensor G2 chip",
+            "6.7-inch QHD+ OLED display",
+            "12GB RAM",
+            "50MP main camera"
+        ],
+        "availability": true,
+        "rating": 4.5,
+        "extra_section": "Pure Android experience"
+    },
+    {
+        "product_id": 9,
+        "product_title": "Apple Watch Series 8",
+        "product_image": "https://ibb.co.com/VmKYVz9",
+        "category": "Smart Watches",
+        "price": 399,
+        "description": "Smartwatch with advanced health sensors and always-on Retina display.",
+        "Specification": [
+            "Advanced health sensors",
+            "Always-on Retina display",
+            "Fall detection",
+            "Water resistance"
+        ],
+        "availability": true,
+        "rating": 4.6,
+        "extra_section": "Supports Family Setup"
+    },
+    {
+        "product_id": 10,
+        "product_title": "Samsung Galaxy Watch 5",
+        "product_image": "https://ibb.co.com/VmKYVz9",
+        "category": "Smart Watches",
+        "price": 279.99,
+        "description": "Smartwatch with bioactive sensor and advanced fitness tracking.",
+        "Specification": [
+            "Bioactive sensor",
+            "1.4-inch AMOLED display",
+            "GPS tracking",
+            "Sleep analysis"
+        ],
+        "availability": true,
+        "rating": 4.4,
+        "extra_section": "Supports Android and iOS"
+    },
+    {
+        "product_id": 11,
+        "product_title": "Sony WH-1000XM5",
+        "product_image": "https://ibb.co.com/ykJJZ3d",
+        "category": "accessories",
+        "price": 349.99,
+        "description": "Noise-canceling wireless headPhones with 30-hour battery life.",
+        "Specification": [
+            "Noise cancellation",
+            "30-hour battery life",
+            "Bluetooth 5.2",
+            "Touch controls"
+        ],
+        "availability": true,
+        "rating": 4.7,
+        "extra_section": "Comes with carrying case"
+    },
+    {
+        "product_id": 12,
+        "product_title": "Anker PowerCore 20,000",
+        "product_image": "https://ibb.co.com/nQfWFgM",
+        "category": "accessories",
+        "price": 49.99,
+        "description": "Portable power bank with 20,000mAh capacity and fast charging.",
+        "Specification": [
+            "20,000mAh capacity",
+            "PowerIQ technology",
+            "Dual USB ports",
+            "Lightweight design"
+        ],
+        "availability": true,
+        "rating": 4.5,
+        "extra_section": "Compatible with most devices"
+    },
+    {
+        "product_id": 13,
+        "product_title": "Logitech MX Master 3",
+        "product_image": "https://ibb.co.com/7ykHCJ5",
+        "category": "accessories",
+        "price": 99.99,
+        "description": "Wireless ergonomic mouse with precision tracking and long battery life.",
+        "Specification": [
+            "Ergonomic design",
+            "Up to 70 days of battery life",
+            "Precision tracking",
+            "Bluetooth and USB receiver"
+        ],
+        "availability": true,
+        "rating": 4.8,
+        "extra_section": "Works with Windows and macOS"
+    },
+    {
+        "product_id": 14,
+        "product_title": "Beats Fit Pro",
+        "product_image": "https://ibb.co.com/82mDvx3",
+        "category": "accessories",
+        "price": 199.99,
+        "description": "True wireless earbuds with active noise cancellation and spatial audio.",
+        "Specification": [
+            "Active Noise Cancellation",
+            "Spatial Audio",
+            "Up to 6 hours of listening",
+            "Apple H1 chip"
+        ],
+        "availability": true,
+        "rating": 4.6,
+        "extra_section": "IPX4 water-resistant"
+    },
+    {
+        "product_id": 15,
+        "product_title": "Razer Kraken Ultimate",
+        "product_image": "https://ibb.co.com/82mDvx3",
+        "category": "Accessories",
+        "price": 129.99,
+        "description": "Gaming headset with THX Spatial Audio and cooling gel-infused ear cushions.",
+        "Specification": [
+            "THX Spatial Audio",
+            "Cooling gel-infused ear cushions",
+            "Noise-canceling microphone",
+            "Detachable mic"
+        ],
+        "availability": true,
+        "rating": 4.4,
+        "extra_section": "Compatible with PC, Xbox, and PS4"
+    },
+    {
+        "product_id": 16,
+        "product_title": "MacBook Pro 16-inch M1 Max",
+        "product_image": "https://ibb.co.com/0hdRDSV",
+        "category": "MacBook",
+        "price": 2399.99,
+        "description": "16-inch MacBook Pro with M1 Max chip, 32GB RAM, and 1TB SSD.",
+        "Specification": [
+            "Apple M1 Max chip",
+            "16-inch Retina XDR display",
+            "32GB RAM",
+            "1TB SSD"
+        ],
+        "availability": true,
+        "rating": 4.9,
+        "extra_section": "Increased graphics performance for pro-level tasks"
+    },
+    {
+        "product_id": 17,
+        "product_title": "Iphone 12",
+        "product_image": "hhttps://ibb.co.com/KFVjJyt",
+        "category": "Iphone",
+        "price": 799.99,
+        "description": "6.1-inch Iphone 12 with A14 Bionic chip and dual-camera system.",
+        "Specification": [
+            "A14 Bionic chip",
+            "6.1-inch Super Retina XDR display",
+            "Dual-camera system",
+            "MagSafe technology"
+        ],
+        "availability": true,
+        "rating": 4.6,
+        "extra_section": "5G capable"
+    },
+    {
+        "product_id": 18,
+        "product_title": "Samsung Galaxy Z Fold 4",
+        "product_image": "https://ibb.co.com/JjGc7XH",
+        "category": "Phones",
+        "price": 1799.99,
+        "description": "Foldable smartphone with 7.6-inch Dynamic AMOLED 2X display and Snapdragon 8 Gen 1.",
+        "Specification": [
+            "Snapdragon 8 Gen 1",
+            "7.6-inch Dynamic AMOLED 2X display",
+            "12GB RAM",
+            "Foldable design"
+        ],
+        "availability": true,
+        "rating": 4.7,
+        "extra_section": "Includes S Pen"
+    },
+    {
+        "product_id": 19,
+        "product_title": "Apple Watch SE 2",
+        "product_image": "https://ibb.co.com/VmKYVz9",
+        "category": "Smart Watches",
+        "price": 249.99,
+        "description": "Affordable smartwatch with heart rate monitoring and fall detection.",
+        "Specification": [
+            "Heart rate monitoring",
+            "Fall detection",
+            "Sleep tracking",
+            "Water resistant"
+        ],
+        "availability": true,
+        "rating": 4.4,
+        "extra_section": "Works with Family Setup"
+    },
+    {
+        "product_id": 20,
+        "product_title": "Google Pixel Watch",
+        "product_image": "https://ibb.co.com/VmKYVz9",
+        "category": "Smart Watches",
+        "price": 349.99,
+        "description": "Wear OS smartwatch with Fitbit health tracking and custom watch faces.",
+        "Specification": [
+            "Fitbit health tracking",
+            "1.2-inch AMOLED display",
+            "Custom watch faces",
+            "Water resistant"
+        ],
+        "availability": true,
+        "rating": 4.3,
+        "extra_section": "Supports Google Assistant"
+    },
+    {
+        "product_id": 21,
+        "product_title": "Logitech G Pro X Wireless",
+        "product_image": "https://ibb.co.com/0r2VgXb",
+        "category": "accessories",
+        "price": 149.99,
+        "description": "Wireless gaming headset with Blue VO!CE microphone technology and 50mm drivers.",
+        "Specification": [
+            "50mm drivers",
+            "Blue VO!CE microphone technology",
+            "Light speed wireless connection",
+            "50-hour battery life"
+        ],
+        "availability": true,
+        "rating": 4.8,
+        "extra_section": "Compatible with PC, PS4, and Xbox"
+    },
+    {
+        "product_id": 22,
+        "product_title": "Apple Magic Keyboard",
+        "product_image": "https://ibb.co.com/w4Y0z73",
+        "category": "accessories",
+        "price": 99.99,
+        "description": "Wireless keyboard with scissor mechanism and rechargeable battery.",
+        "Specification": [
+            "Scissor mechanism",
+            "Wireless Bluetooth connectivity",
+            "Rechargeable battery",
+            "Compact design"
+        ],
+        "availability": true,
+        "rating": 4.6,
+        "extra_section": "Compatible with Mac and iPad"
+    },
+    {
+        "product_id": 23,
+        "product_title": "Sony WF-1000XM4",
+        "product_image": "https://ibb.co.com/MCHFDTF",
+        "category": "accessories",
+        "price": 279.99,
+        "description": "True wireless earbuds with noise cancellation and 8-hour battery life.",
+        "Specification": [
+            "Noise cancellation",
+            "8-hour battery life",
+            "IPX4 water resistance",
+            "LDAC support"
+        ],
+        "availability": true,
+        "rating": 4.7,
+        "extra_section": "Adaptive Sound Control"
+    },
+    {
+        "product_id": 24,
+        "product_title": "Apple AirPods Pro 2",
+        "product_image": "https://ibb.co.com/xjxxLvs",
+        "category": "accessories",
+        "price": 249.99,
+        "description": "Active noise-canceling earbuds with H2 chip and improved sound quality.",
+        "Specification": [
+            "Active Noise Cancellation",
+            "H2 chip",
+            "Spatial Audio",
+            "Up to 6 hours listening"
+        ],
+        "availability": true,
+        "rating": 4.8,
+        "extra_section": "Includes multiple ear tips"
+    },
+    {
+        "product_id": 25,
+        "product_title": "Iphone 14",
+        "product_image": "https://ibb.co.com/KFVjJyt",
+        "category": "Iphone",
+        "price": 799.99,
+        "description": "6.1-inch Iphone 14 with A15 Bionic chip and dual-camera system.",
+        "Specification": [
+            "A15 Bionic chip",
+            "6.1-inch Super Retina XDR display",
+            "Dual-camera system",
+            "5G capable"
+        ],
+        "availability": true,
+        "rating": 4.7,
+        "extra_section": "Comes in multiple colors"
+    },
+    {
+        "product_id": 26,
+        "product_title": "MacBook Pro 13-inch M2",
+        "product_image": "https://ibb.co.com/0hdRDSV",
+        "category": "MacBook",
+        "price": 1499.99,
+        "description": "13-inch MacBook Pro with M2 chip, 16GB RAM, and 512GB SSD.",
+        "Specification": [
+            "Apple M2 chip",
+            "13-inch Retina display",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.8,
+        "extra_section": "Up to 20 hours of battery life"
+    },
+    {
+        "product_id": 27,
+        "product_title": "Logitech G502 HERO",
+        "product_image": "https://ibb.co.com/ykJJZ3d",
+        "category": "accessories",
+        "price": 49.99,
+        "description": "Gaming mouse with HERO sensor, customizable RGB lighting, and 11 programmable buttons.",
+        "Specification": [
+            "HERO sensor",
+            "Customizable RGB lighting",
+            "11 programmable buttons",
+            "Onboard memory"
+        ],
+        "availability": true,
+        "rating": 4.6,
+        "extra_section": "Compatible with Windows and macOS"
+    },
+    {
+        "product_id": 28,
+        "product_title": "Anker Soundcore Liberty Air 2 Pro",
+        "product_image": "https://ibb.co.com/68pcwhs",
+        "category": "accessories",
+        "price": 129.99,
+        "description": "True wireless earbuds with hybrid active noise cancellation and personalized sound.",
+        "Specification": [
+            "Hybrid Active Noise Cancellation",
+            "Personalized sound",
+            "6-hour battery life",
+            "IPX4 water-resistant"
+        ],
+        "availability": true,
+        "rating": 4.7,
+        "extra_section": "Includes multiple ear tips"
+    },
+    {
+        "product_id": 29,
+        "product_title": "Apple Magic Mouse 2",
+        "product_image": "https://ibb.co.com/31xgr7C",
+        "category": "accessories",
+        "price": 79.99,
+        "description": "Rechargeable wireless mouse with multi-touch surface and precision tracking.",
+        "Specification": [
+            "Rechargeable",
+            "Multi-touch surface",
+            "Precision tracking",
+            "Bluetooth connectivity"
+        ],
+        "availability": true,
+        "rating": 4.4,
+        "extra_section": "Works with Mac and iPad"
+    },
+    {
+        "product_id": 30,
+        "product_title": "Samsung Galaxy S22+",
+        "product_image": "https://ibb.co.com/JjGc7XH",
+        "category": "Phones",
+        "price": 999.99,
+        "description": "6.6-inch smartphone with Snapdragon"
+    }
+]
