@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import {  useLoaderData, useParams } from "react-router-dom";
 import { FaOpencart } from "react-icons/fa";
 import { IoMdHeartEmpty } from "react-icons/io";
+import { addCartToLs, addWishListToLs } from "../JS/LocalStorage";
 
 const ProductDetails = () => {
     const products = useLoaderData();
@@ -16,7 +17,7 @@ const ProductDetails = () => {
 
     }, [products, productId]);
 
-    const { product_title, price, product_image, availability, Specification, extra_section, rating, description } = product;
+    const { product_id,product_title, price, product_image, availability, Specification, extra_section, rating, description } = product;
     return (
         <div className="relative">
             <div className=" bg-[#9538E2] pb-40">
@@ -51,11 +52,11 @@ const ProductDetails = () => {
                                 Specification?.map((list, idx) => <li className="font-medium text-gray-500" key={idx}>{list}</li>)
                             }
                         </ol>
-                        <p className="flex items-center gap-2 text-xl font-semibold">Rating
+                        <div className="flex items-center gap-2 text-xl font-semibold">Rating
                             <div className="rating rating-sm">
                                 <input type="radio" name="rating-5" className="mask mask-star-2 bg-amber-400" aria-label="1 star" defaultChecked />
                             </div>
-                        </p>
+                        </div>
 
                         <div className="space-x-3 ">
                             <div className="rating rating-xs">
@@ -69,8 +70,11 @@ const ProductDetails = () => {
                         </div>
 
                         <div className="card-actions my-4 flex items-center">
-                            <button className="btn text-white bg-[#9538E2]">Add To Cart <FaOpencart className="text-xl" /></button>
-                            <IoMdHeartEmpty className="text-4xl border rounded-full p-1" />
+                            <button onClick={()=>addCartToLs(product_id)} className="btn text-white bg-[#9538E2]">Add To Cart <FaOpencart className="text-xl" /></button>
+
+                            <button onClick={()=> addWishListToLs(product_id)}>
+                                <IoMdHeartEmpty className="text-4xl border rounded-full p-1" />
+                            </button>
                         </div>
                     </div>
                 </div>
