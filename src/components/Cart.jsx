@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
-import { getStoredCartList } from "../JS/LocalStorage";
+import { NavLink, useLoaderData } from "react-router-dom";
+import { getStoredCartList, successToast } from "../JS/LocalStorage";
 import CartItems from "./CartItems";
 
 const Cart = () => {
@@ -24,12 +24,19 @@ const Cart = () => {
         const updateProducts = cart.filter(product => product.product_id !== id);
         setCart(updateProducts);
         localStorage.setItem('cart', JSON.stringify(updateProducts));
+        successToast('This item is removed from Cart');
+
     }
 
-    const handlePurchase = () =>{
+    const handlePurchase = () => {
         setTotalPrice(0);
         setCart([]);
         localStorage.removeItem('cart');
+    }
+
+    const sortByPrice = () => {
+        const sortedCart = [...cart].sort((a, b) => b.price - a.price);
+        setCart(sortedCart);
     }
 
     return (
@@ -37,8 +44,8 @@ const Cart = () => {
             <div className="flex justify-between my-5">
                 <h3 className="text-2xl font-bold">Cart</h3>
                 <div className="flex items-center gap-5">
-                    <h2 className="text-xl font-semibold">Total Cost:  <span>{totalPrice}</span> </h2>
-                    <button className="btn px-5" >Sort By Price</button >
+                    <h2 className="text-xl font-semibold">Total Cost:  <span>{totalPrice.toFixed(2)}</span> </h2>
+                    <button onClick={sortByPrice} className="btn px-5" >Sort By Price</button >
                     <label htmlFor="my_modal_6" className={`btn px-5 ${cart.length === 0 ? 'btn-disabled' : ''}`} >Purchase</label>
                 </div>
             </div>
@@ -64,7 +71,9 @@ const Cart = () => {
                         <p className="text-gray-500 font-semibold">Total: {totalPrice}</p>
                     </div>
                     <div onClick={handlePurchase} className={`modal-action w-full`}>
-                        <label htmlFor="my_modal_6" className="btn w-full">Close!</label>
+                        <NavLink to='/'>
+                            <label htmlFor="my_modal_6" className="btn w-full">Close!</label>
+                        </NavLink>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,17 @@
+import { toast } from "react-toastify";
+
+const successToast = (text) => {
+        toast.success(text, {
+            position: 'top-center',
+        });
+    };
+
+const warningToast = (text) => {
+        toast.warn(text, {
+            position: 'top-center',
+        });
+    };
+
 const getStoredCartList = () => {
     const storedDataStr = localStorage.getItem('cart');
     if (storedDataStr) {
@@ -13,13 +27,14 @@ const addCartToLs = (id) => {
     const storedData = getStoredCartList();
 
     if (storedData.includes(id)) {
-        alert('this book is already exist')
+        warningToast('This item is already exist');
+        // already exist 
     }
     else {
         storedData.push(id);
         const storedDataStr = JSON.stringify(storedData);
         localStorage.setItem('cart', storedDataStr);
-        alert('this book is added to ls')
+        successToast('Item is added To cart');
     }
 }
 
@@ -39,16 +54,17 @@ const addWishListToLs = (id) => {
     const storedData = getStoredWishList();
 
     if (storedData.includes(id)) {
-        alert('this book is already exist')
+        warningToast('This item is already exist');
     }
     else {
         storedData.push(id);
         const storedDataStr = JSON.stringify(storedData);
         localStorage.setItem('wish-list', storedDataStr);
-        alert('this book is added to ls')
+        successToast('This item added to Wishlist');
     }
+
 }
 
 
 
-export { getStoredCartList, addCartToLs, getStoredWishList, addWishListToLs }
+export { getStoredCartList, addCartToLs, getStoredWishList, addWishListToLs ,successToast, warningToast}

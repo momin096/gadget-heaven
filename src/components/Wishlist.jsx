@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import { getStoredWishList } from "../JS/LocalStorage";
+import { getStoredWishList, successToast } from "../JS/LocalStorage";
 
 import WishItems from "./WishItems";
 
@@ -20,6 +20,7 @@ const Wishlist = () => {
         const updateProducts = wishList.filter(product => product.product_id !== id);
         setWishList(updateProducts);
         localStorage.setItem('wish-list', JSON.stringify(updateProducts));
+        successToast('This item removed from wishlist')
     }
 
     return (

@@ -1,23 +1,29 @@
 import { useEffect, useState } from "react";
-import {  useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import { FaOpencart } from "react-icons/fa";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { addCartToLs, addWishListToLs } from "../JS/LocalStorage";
+import { toast } from "react-toastify";
 
 const ProductDetails = () => {
     const products = useLoaderData();
     const { productId } = useParams();
+    
 
 
     const [product, setProduct] = useState([]);
+    // const [disabled, setDisabled] = useState(false);
 
     useEffect(() => {
         const displayProduct = products.find(product => product.product_id === parseInt(productId));
         setProduct(displayProduct);
 
-    }, [products, productId]);
 
-    const { product_id,product_title, price, product_image, availability, Specification, extra_section, rating, description } = product;
+    }, [products, productId]);
+    
+    
+
+    const { product_id, product_title, price, product_image, availability, Specification, extra_section, rating, description } = product;
     return (
         <div className="relative">
             <div className=" bg-[#9538E2] pb-40">
@@ -70,16 +76,16 @@ const ProductDetails = () => {
                         </div>
 
                         <div className="card-actions my-4 flex items-center">
-                            <button onClick={()=>addCartToLs(product_id)} className="btn text-white bg-[#9538E2]">Add To Cart <FaOpencart className="text-xl" /></button>
+                            <button onClick={() => (addCartToLs(product_id))} className="btn text-white bg-[#9538E2]">Add To Cart <FaOpencart className="text-xl" /></button>
 
-                            <button onClick={()=> addWishListToLs(product_id)}>
-                                <IoMdHeartEmpty className="text-4xl border rounded-full p-1" />
-                            </button>
-                        </div>
+                        <button  onClick={() => addWishListToLs(product_id)}>
+                            <IoMdHeartEmpty  className="text-4xl border rounded-full p-1" />
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
+        </div >
     );
 };
 
