@@ -68,7 +68,7 @@ const Cart = () => {
                         ">Payment Successfully</h2>
                         <div className="divider "></div>
                         <p className="font-semibold text-gray-500 my-2">Thanks for purchasing.</p>
-                        <p className="text-gray-500 font-semibold">Total: {totalPrice}</p>
+                        <p className="text-gray-500 font-semibold">Total: {totalPrice.toFixed(2)}</p>
                     </div>
                     <div onClick={handlePurchase} className={`modal-action w-full`}>
                         <NavLink to='/'>

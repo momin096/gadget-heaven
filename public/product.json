@@ -138,7 +138,7 @@
     {
         "product_id": 9,
         "product_title": "Apple Watch Series 8",
-        "product_image": "https://ibb.co.com/VmKYVz9",
+        "product_image": "https://i.ibb.co.com/PzjRgS7K/watch-ultra-01-500x500.jpg",
         "category": "Smart Watches",
         "price": 399,
         "description": "Smartwatch with advanced health sensors and always-on Retina display.",
@@ -155,7 +155,7 @@
     {
         "product_id": 10,
         "product_title": "Samsung Galaxy Watch 5",
-        "product_image": "https://ibb.co.com/VmKYVz9",
+        "product_image": "https://i.ibb.co.com/PzjRgS7K/watch-ultra-01-500x500.jpg",
         "category": "Smart Watches",
         "price": 279.99,
         "description": "Smartwatch with bioactive sensor and advanced fitness tracking.",
@@ -172,7 +172,7 @@
     {
         "product_id": 11,
         "product_title": "Sony WH-1000XM5",
-        "product_image": "https://ibb.co.com/ykJJZ3d",
+        "product_image": "https://i.ibb.co.com/LZyVzwV/sony-wf-1000xm4-wireless-headphones-01-500x500.jpg",
         "category": "Accessories",
         "price": 349.99,
         "description": "Noise-canceling wireless headPhones with 30-hour battery life.",
@@ -189,7 +189,7 @@
     {
         "product_id": 12,
         "product_title": "Anker PowerCore 20,000",
-        "product_image": "https://ibb.co.com/nQfWFgM",
+        "product_image": "https://i.ibb.co.com/vLmtSw4/Anker-Zolo-Power-Bank10000m-Ah-30-W-6.webp",
         "category": "Accessories",
         "price": 49.99,
         "description": "Portable power bank with 20,000mAh capacity and fast charging.",
@@ -206,7 +206,7 @@
     {
         "product_id": 13,
         "product_title": "Logitech MX Master 3",
-        "product_image": "https://ibb.co.com/7ykHCJ5",
+        "product_image": "https://i.ibb.co.com/zf61xhY/mx-master-3-graphite-top-500x500.jpg",
         "category": "Accessories",
         "price": 99.99,
         "description": "Wireless ergonomic mouse with precision tracking and long battery life.",
@@ -223,7 +223,7 @@
     {
         "product_id": 14,
         "product_title": "Beats Fit Pro",
-        "product_image": "https://ibb.co.com/82mDvx3",
+        "product_image": "https://i.ibb.co.com/pZ1vVKD/3976-27705.jpg",
         "category": "Accessories",
         "price": 199.99,
         "description": "True wireless earbuds with active noise cancellation and spatial audio.",
@@ -240,7 +240,7 @@
     {
         "product_id": 15,
         "product_title": "Razer Kraken Ultimate",
-        "product_image": "https://ibb.co.com/82mDvx3",
+        "product_image": "https://i.ibb.co.com/FYttyPm/5318-55349.jpg",
         "category": "Accessories",
         "price": 129.99,
         "description": "Gaming headset with THX Spatial Audio and cooling gel-infused ear cushions.",
@@ -308,7 +308,7 @@
     {
         "product_id": 19,
         "product_title": "Apple Watch SE 2",
-        "product_image": "https://ibb.co.com/VmKYVz9",
+        "product_image": "https://i.ibb.co.com/rsW2kz0/apple-watch-ultra-2-black-01-500x500.webp",
         "category": "Smart Watches",
         "price": 249.99,
         "description": "Affordable smartwatch with heart rate monitoring and fall detection.",
@@ -325,7 +325,7 @@
     {
         "product_id": 20,
         "product_title": "Google Pixel Watch",
-        "product_image": "https://ibb.co.com/VmKYVz9",
+        "product_image": "https://i.ibb.co.com/PzjRgS7K/watch-ultra-01-500x500.jpg",
         "category": "Smart Watches",
         "price": 349.99,
         "description": "Wear OS smartwatch with Fitbit health tracking and custom watch faces.",
@@ -342,7 +342,7 @@
     {
         "product_id": 21,
         "product_title": "Logitech G Pro X Wireless",
-        "product_image": "https://ibb.co.com/0r2VgXb",
+        "product_image": "https://i.ibb.co.com/hV91PMz/logitech-pro-x-gaming-headset-1.jpg",
         "category": "Accessories",
         "price": 149.99,
         "description": "Wireless gaming headset with Blue VO!CE microphone technology and 50mm drivers.",
@@ -359,7 +359,7 @@
     {
         "product_id": 22,
         "product_title": "Apple Magic Keyboard",
-        "product_image": "https://ibb.co.com/w4Y0z73",
+        "product_image": "https://i.ibb.co.com/89XK7bT/Apple-Magic-Keyboard.webp",
         "category": "Accessories",
         "price": 99.99,
         "description": "Wireless keyboard with scissor mechanism and rechargeable battery.",
@@ -376,7 +376,7 @@
     {
         "product_id": 23,
         "product_title": "Sony WF-1000XM4",
-        "product_image": "https://ibb.co.com/MCHFDTF",
+        "product_image": "https://i.ibb.co.com/FYttyPm/5318-55349.jpg",
         "category": "Accessories",
         "price": 279.99,
         "description": "True wireless earbuds with noise cancellation and 8-hour battery life.",
@@ -393,7 +393,7 @@
     {
         "product_id": 24,
         "product_title": "Apple AirPods Pro 2",
-        "product_image": "https://ibb.co.com/xjxxLvs",
+        "product_image": "https://i.ibb.co.com/sw88RSP/airpods-4-with-active-noise-cancellation-5.jpg",
         "category": "Accessories",
         "price": 249.99,
         "description": "Active noise-canceling earbuds with H2 chip and improved sound quality.",
@@ -444,7 +444,7 @@
     {
         "product_id": 27,
         "product_title": "Logitech G502 HERO",
-        "product_image": "https://ibb.co.com/ykJJZ3d",
+        "product_image": "https://i.ibb.co.com/zf61xhY/mx-master-3-graphite-top-500x500.jpg",
         "category": "Accessories",
         "price": 49.99,
         "description": "Gaming mouse with HERO sensor, customizable RGB lighting, and 11 programmable buttons.",
@@ -460,8 +460,8 @@
     },
     {
         "product_id": 28,
-        "product_title": "Anker Soundcore Liberty Air 2 Pro",
-        "product_image": "https://ibb.co.com/68pcwhs",
+        "product_title": "Soundcore Liberty Air 2 Pro",
+        "product_image": "https://i.ibb.co.com/MfjySTN/Soundcore-Liberty-Air-2-Pro-01-500x500.jpg",
         "category": "Accessories",
         "price": 129.99,
         "description": "True wireless earbuds with hybrid active noise cancellation and personalized sound.",
@@ -478,7 +478,7 @@
     {
         "product_id": 29,
         "product_title": "Apple Magic Mouse 2",
-        "product_image": "https://ibb.co.com/31xgr7C",
+        "product_image": "https://i.ibb.co.com/8My1K07/magic-mouse-01-500x500.jpg",
         "category": "Accessories",
         "price": 79.99,
         "description": "Rechargeable wireless mouse with multi-touch surface and precision tracking.",
