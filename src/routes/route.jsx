@@ -6,11 +6,13 @@ import ProductDetails from "../layouts/ProductDetails";
 import DashBoard from "../pages/DashBoard";
 import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <MainLayout />,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: '/',
@@ -37,20 +39,20 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/',
                 element: <DashBoard />,
-                children:[
+                children: [
                     {
-                        index:true,
-                        element : <Navigate to='/dashboard/cart' replace/>,
+                        index: true,
+                        element: <Navigate to='/dashboard/cart' replace />,
                     },
                     {
-                        path:'/dashboard/cart',
-                        element : <Cart />,
+                        path: '/dashboard/cart',
+                        element: <Cart />,
                         loader: () => fetch(`../product.json`)
                     },
-                    
+
                     {
-                        path:'/dashboard/wishlist',
-                        element : <Wishlist />,
+                        path: '/dashboard/wishlist',
+                        element: <Wishlist />,
                         loader: () => fetch(`../product.json`)
                     },
                 ]

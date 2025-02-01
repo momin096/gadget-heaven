@@ -5,11 +5,11 @@ const CartItems = ({ item, handleDelete }) => {
 
     return (
         <div className="">
-            <div className="flex max-w-5xl mx-auto gap-5  p-5 bg-white shadow-sm rounded-2xl">
+            <div className="flex max-w-5xl mx-auto gap-5  p-5 bg-white shadow-sm rounded-2xl flex-col md:flex-row ">
                 <div className="">
-                    <img className="max-w-30 p-5" src={product_image} alt="" />
+                    <img className="max-w-36 md:max-w-30 p-5" src={product_image} alt="" />
                 </div>
-                <div className="space-y-2  flex justify-between w-full">
+                <div className="space-y-2  flex justify-between w-full ">
                     <div className="space-y-2">
                         <h3 className="text-xl font-bold">{product_title}</h3>
                         <p className="font-medium text-gray-600">{description}</p>

@@ -3,29 +3,34 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { FaOpencart } from "react-icons/fa";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { addCartToLs, addWishListToLs } from "../JS/LocalStorage";
-import { toast } from "react-toastify";
 
 const ProductDetails = () => {
     const products = useLoaderData();
     const { productId } = useParams();
     
-
-
     const [product, setProduct] = useState([]);
-    // const [disabled, setDisabled] = useState(false);
+    const [disabled, setDisabled] = useState(false);
+
+    const btnWishList  = <>
+            <IoMdHeartEmpty  className="text-4xl border rounded-full p-1" />
+
+    </>
+
 
     useEffect(() => {
         const displayProduct = products.find(product => product.product_id === parseInt(productId));
         setProduct(displayProduct);
-
-
     }, [products, productId]);
+
+    const handleWishListBtn = () =>{
+        setDisabled(true);
+    }
     
     
 
     const { product_id, product_title, price, product_image, availability, Specification, extra_section, rating, description } = product;
     return (
-        <div className="relative">
+        <div className="relative md:min-h-screen min-h-96 z-50">
             <div className=" bg-[#9538E2] pb-40">
                 <div className="container mx-auto text-center space-y-5 pt-5">
                     <h2 className="text-3xl font-semibold text-white">Product Details</h2>
@@ -38,8 +43,7 @@ const ProductDetails = () => {
             <div className="container mx-auto absolute md:left- lg:top-35 lg:left-10 xl:top-40 xl:left-[75px] ">
                 <div className="card lg:card-side bg-base-100 shadow-sm">
                     <figure className="rounded-xl">
-                        <img className="p-4 rounded-4xl max-h-[500px]
-                        "
+                        <img className="p-4 rounded-4xl max-h-[500px]"
                             src={product_image}
                             alt="Album" />
                     </figure>
@@ -78,8 +82,12 @@ const ProductDetails = () => {
                         <div className="card-actions my-4 flex items-center">
                             <button onClick={() => (addCartToLs(product_id))} className="btn text-white bg-[#9538E2]">Add To Cart <FaOpencart className="text-xl" /></button>
 
-                        <button  onClick={() => addWishListToLs(product_id)}>
-                            <IoMdHeartEmpty  className="text-4xl border rounded-full p-1" />
+                        <button  onClick={() => (addWishListToLs(product_id), handleWishListBtn())}
+                            className={`${disabled ? 'btn-disabled opacity-15' : ''}`}
+                            >
+                                {
+                                    btnWishList
+                                }
                         </button>
                     </div>
                 </div>

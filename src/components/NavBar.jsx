@@ -1,17 +1,11 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
-import { useState } from "react";
-import { getStoredCartList, getStoredWishList } from "../JS/LocalStorage";
 
 
 const NavBar = () => {
     const location = useLocation();
-    const [cartCount , setCartCount ] = useState(null);
-    const [wishCount , setWishCount] = useState(null);
 
-    const cart = getStoredCartList();
-    const wishlist = getStoredWishList();
 
     const links = <>
         <li><NavLink className={({ isActive }) => `${isActive ? 'bg-fuchsia-800 text-white' : ''}

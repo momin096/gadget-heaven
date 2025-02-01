@@ -40,10 +40,10 @@ const Cart = () => {
     }
 
     return (
-        <div className="container mx-auto">
-            <div className="flex justify-between my-5">
-                <h3 className="text-2xl font-bold">Cart</h3>
-                <div className="flex items-center gap-5">
+        <div className="container mx-auto px-20">
+            <div className="flex justify-between my-5 flex-col md:flex-row">
+                <h3 className="text-2xl font-bold text-center md:text-left">Cart</h3>
+                <div className="flex items-center gap-5 flex-col md:flex-row">
                     <h2 className="text-xl font-semibold">Total Cost:  <span>{totalPrice.toFixed(2)}</span> </h2>
                     <button onClick={sortByPrice} className="btn px-5" >Sort By Price</button >
                     <label htmlFor="my_modal_6" className={`btn px-5 ${cart.length === 0 ? 'btn-disabled' : ''}`} >Purchase</label>
